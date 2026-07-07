@@ -148,11 +148,11 @@ When a user's message count goes above 10, the backend compresses the oldest 5 m
 
 ### What you need
 
-| Tool | Version |
-|------|---------|
-| Node.js | v18+ |
-| npm | v9+ |
-| MongoDB Atlas | Free tier is fine |
+| Tool           | Version                                            |
+| -------------- | -------------------------------------------------- |
+| Node.js        | v18+                                               |
+| npm            | v9+                                                |
+| MongoDB Atlas  | Free tier is fine                                  |
 | Gemini API Key | [Get one here](https://aistudio.google.com/apikey) |
 
 ### 1. Clone
@@ -265,18 +265,18 @@ Go to `http://localhost:5173`, create an account, start chatting.
 
 ### Auth
 
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|---------------|
-| POST | `/api/auth/signup` | Create account | No |
-| POST | `/api/auth/login` | Get JWT token | No |
+| Method | Endpoint           | Description    | Auth Required |
+| ------ | ------------------ | -------------- | ------------- |
+| POST   | `/api/auth/signup` | Create account | No            |
+| POST   | `/api/auth/login`  | Get JWT token  | No            |
 
 ### Chat
 
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|---------------|
-| POST | `/api/chat` | Send message (text + optional image) | Yes |
-| GET | `/api/chat/history` | Get chat history | Yes |
-| DELETE | `/api/chat/history` | Clear chat history and memory | Yes |
+| Method | Endpoint            | Description                          | Auth Required |
+| ------ | ------------------- | ------------------------------------ | ------------- |
+| POST   | `/api/chat`         | Send message (text + optional image) | Yes           |
+| GET    | `/api/chat/history` | Get chat history                     | Yes           |
+| DELETE | `/api/chat/history` | Clear chat history and memory        | Yes           |
 
 <details>
 <summary><strong>Example: Send a message</strong></summary>
@@ -295,11 +295,13 @@ Content-Type: application/json
 ```
 
 Response:
+
 ````json
 {
   "reply": "## Recursion\n\nRecursion is when a function calls itself...\n\n```python\ndef factorial(n):\n    if n <= 1:\n        return 1\n    return n * factorial(n - 1)\n```"
 }
 ````
+
 </details>
 
 <details>
@@ -312,6 +314,7 @@ Response:
   "customContext": ""
 }
 ```
+
 </details>
 
 ---
@@ -360,6 +363,7 @@ KLIQ-AI-Chatbot/
 ## Design
 
 The UI uses a glassmorphism + dark theme look:
+
 - Dark purple/blue gradient background
 - Frosted glass effect on cards (`backdrop-filter: blur`)
 - Cyan and purple neon accents
@@ -382,10 +386,10 @@ const MODEL_CANDIDATES = [
 ];
 ```
 
-| Setting | Value | What it does |
-|---------|-------|-------------|
-| `MEMORY_LIMIT` | 10 | Compress after this many messages |
-| `SUMMARY_CHUNK_SIZE` | 5 | How many old messages to compress at once |
+| Setting              | Value | What it does                              |
+| -------------------- | ----- | ----------------------------------------- |
+| `MEMORY_LIMIT`       | 10    | Compress after this many messages         |
+| `SUMMARY_CHUNK_SIZE` | 5     | How many old messages to compress at once |
 
 ---
 
