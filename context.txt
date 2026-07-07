@@ -1,0 +1,271 @@
+📌 PROJECT CONTEXT (READ CAREFULLY)
+
+You are assisting me in building a final-exam MERN AI project in ONE DAY (≈6 hours).
+This is not a toy chatbot and not just an API call demo.
+
+The project is a modern AI assistant web app with:
+
+professional UI
+
+multimodal features
+
+clean architecture
+
+exam-ready explanation
+
+You must prioritize correctness, simplicity, and completion within time.
+
+🧠 PROJECT OVERVIEW
+
+Project Type:
+AI-powered chat assistant web application
+
+Purpose:
+Demonstrate:
+
+full-stack development
+
+AI integration
+
+thoughtful UX
+
+non-trivial features (audio, images, code formatting)
+
+This is for a college final exam, so:
+
+clarity > overengineering
+
+stable > fancy
+
+explainable > experimental
+
+🧱 TECH STACK (FIXED – DO NOT CHANGE)
+Frontend
+
+React (Vite)
+
+Tailwind CSS
+
+Framer Motion (animations)
+
+lucide-react (icons)
+
+Backend
+
+Node.js
+
+Express
+
+MongoDB (Mongoose)
+
+Google Gemini API (text + image understanding)
+
+Google Text-to-Speech (server-side audio generation)
+
+NOT allowed
+
+Python
+
+Next.js
+
+Firebase
+
+Serverless
+
+Any new framework not listed above
+
+🎨 UI / UX REQUIREMENTS (VERY IMPORTANT)
+
+The UI should be:
+
+mobile-first
+
+phone-frame style chat UI
+
+glassmorphism (blur, translucent cards)
+
+purple / blue gradient background
+
+modern AI-product look (ChatGPT / Gemini inspired)
+
+Chat UI rules
+
+User messages → right aligned
+
+AI messages → left aligned
+
+AI message bubble supports:
+
+normal text
+
+code blocks (monospace, boxed)
+
+text-to-speech button below the bubble
+
+Input bar is floating and rounded
+
+Subtle animations only (fade / slide)
+
+No extra dashboard cards, voice recorders, or clutter.
+
+✨ CORE FEATURES (MANDATORY)
+1️⃣ Text Chat (Gemini)
+
+User sends text
+
+Gemini responds
+
+Messages stored in MongoDB
+
+Chat history retrievable
+
+2️⃣ Context Control (Session-based)
+
+Preset modes (friendly, professional, mentor, sarcastic)
+
+Custom user context input
+
+Context applies only to current session
+
+Context is NOT stored in database
+
+3️⃣ Code Block Rendering
+
+When AI responds with code:
+
+Render in a separate code box
+
+Monospace font
+
+Dark translucent background
+
+Optional language label
+
+Optional copy button
+
+This is mandatory for questions like:
+
+“What is a stack? Explain with code.”
+
+4️⃣ Text-to-Speech (IMPORTANT)
+
+Each AI response has a 🔊 button beneath it
+
+Clicking it plays audio of that response
+
+Audio is generated server-side
+
+Use Google / Gemini TTS
+
+Single voice is enough
+
+No streaming required
+
+This feature exists to show:
+
+“AI output is not just text.”
+
+5️⃣ Image Input Support
+
+User can attach an image
+
+Image + optional text is sent to Gemini
+
+Gemini can describe or answer questions about the image
+
+Show image preview before sending
+
+⏱️ TIME CONSTRAINTS
+
+This project must be completed in ~6 focused hours, so:
+
+DO NOT:
+
+add authentication
+
+add user accounts
+
+add streaming audio
+
+add voice selection UI
+
+add SSR or SEO
+
+add unnecessary abstractions
+
+DO:
+
+keep code readable
+
+keep endpoints minimal
+
+reuse UI patterns
+
+stop once feature works
+
+🛑 STEP-BY-STEP RULE (CRITICAL)
+
+You must follow this rule strictly:
+
+❌ DO NOT move to the next part automatically
+
+✅ After finishing one part, STOP
+✅ Wait for me to explicitly say:
+
+“let’s hop onto next”
+
+Only then continue.
+
+If I do not say that exact phrase:
+
+do not continue
+
+do not suggest next steps
+
+do not add extra features
+
+🗣️ COMMUNICATION STYLE
+
+Be precise
+
+Be exam-oriented
+
+Avoid unnecessary theory
+
+Prefer implementation-ready explanations
+
+When giving code:
+
+give complete blocks
+
+clearly say where to paste
+
+No emojis unless minimal
+
+No hype, no fluff
+
+🎓 EXAM EXPECTATION
+
+The final project should be defensible with explanations like:
+
+“Why TTS was implemented”
+
+“How Gemini is integrated”
+
+“How context is handled”
+
+“How code blocks are rendered”
+
+“Why this is not just an API wrapper”
+
+✅ ACKNOWLEDGEMENT REQUIRED
+
+Before starting any implementation help, you should:
+
+Acknowledge you understand all constraints
+
+Ask what part to start with
+
+And then WAIT.
+
+🔒 END OF CONTEXT
