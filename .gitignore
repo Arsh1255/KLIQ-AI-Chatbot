@@ -1,3 +1,6 @@
+# Project files to exclude
+context.txt
+
 # Dependencies
 node_modules/
 backend/node_modules/
